@@ -1,0 +1,16 @@
+{
+  "name": "pattern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^18.15.11",
+    "nodemon": "^2.0.22",
+    "tsc-watch": "^6.0.0",
+    "typescript": "^5.0.4"
+  },
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"nodemon ./dist/index.js\""
+  }
+}
