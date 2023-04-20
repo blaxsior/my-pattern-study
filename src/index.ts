@@ -1,3 +1,3 @@
-import { main } from "./patterns/adapter/index.js";
+import { main } from "./patterns/Creational_Patterns/singleton/index.js";
 
 main();
