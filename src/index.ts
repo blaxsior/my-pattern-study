@@ -1,3 +1,3 @@
-import { main } from "./patterns/Creational_Patterns/singleton/index.js";
+import { main } from "./patterns/Structural_Patterns/proxy/proxy-pattern1.js";
 
 main();
