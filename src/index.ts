@@ -1,3 +1,3 @@
-import { main } from "./patterns/Structural_Patterns/proxy/proxy-pattern1.js";
+import { main } from "./patterns/Behavioral_Patterns/memento/ts_ver/idx2.js";
 
 main();
