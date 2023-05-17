@@ -13,14 +13,7 @@ export async function main() {
     const textArea = new TextArea();
     const editor = new Editor(textArea);
     console.log("Read While you write nothing...");
-
-    // for await (const line of rl) {
-    //     if(line.length > 0)
-    //         editor.write(line); 
-    //     else
-    //         rl.close();
-    // }
-
+    
     do {
         buffer = await rl.question('> ');
         if(buffer.length > 0) {
@@ -35,4 +28,16 @@ export async function main() {
     }
     // console.log(textArea.getText());
 
+    const memento = textArea.createMemento();
+    interface T {
+        new (...args:any): any
+    }
+    const ctor = memento.constructor as T;
+    if(ctor != null) {
+        const newMemento = new ctor("In fact, we can make History class");
+        console.log(newMemento.getSavedText());
+        console.log(`the name of ctor is ${ctor.name}`);
+    } else {
+        console.log("cannot get constructor of memento");
+    }
 }

@@ -1,6 +1,9 @@
 package pak2;
 
 //https://www.youtube.com/watch?v=_Q5rXfGuyLQ
+/**
+ * Originator에 대응되는 클래스
+ */ 
 public class TextArea {
     private String text;
 

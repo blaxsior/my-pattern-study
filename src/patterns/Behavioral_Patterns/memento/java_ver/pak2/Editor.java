@@ -2,6 +2,9 @@ package pak2;
 
 import java.util.Deque;
 
+/**
+ * Caretaker에 대응되는 클래스
+ */
 public class Editor {
     private Deque<TextArea.Memento> history;
     private TextArea textarea;

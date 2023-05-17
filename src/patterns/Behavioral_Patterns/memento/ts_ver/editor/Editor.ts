@@ -1,5 +1,7 @@
 import { Memento, TextArea } from "./TextStuff";
-
+/**
+ * Caretaker에 대응되는 클래스
+ */
 export class Editor {
     private readonly mementos: Memento[];
     private textArea: TextArea;
